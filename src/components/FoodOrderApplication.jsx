@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "./FoodOrderApplication.css";
+// import "./FoodOrderApplication.css";
+import "./FoodOrderAppliocation.css"
 
 
 function FoodOrderApplication() {
@@ -27,7 +27,7 @@ function FoodOrderApplication() {
     }, [])
 
     return (
-        <Container >
+        <div >
             <div className="head-Row">
                 <div className="head-Name">
                     <h1><span className="V">V</span>ishesh <span className="V">M</span>eal's</h1>
@@ -86,7 +86,7 @@ function FoodOrderApplication() {
             }
 
 
-        </Container>
+        </div>
     );
 }
 
