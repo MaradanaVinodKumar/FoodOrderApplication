@@ -44,7 +44,7 @@ function FoodOrderApplication() {
                             <div key={meal.id} className="meal">
 
                                 <div className="meal-image-container">
-                                    <img src={"https://tthdnz-3000.csb.app/" + meal.image} className="meal-image" />
+                                    <img src={"https://tthdnz-3000.csb.app/" + meal.image} className="meal-image" alt={meal.name} />
                                 </div>
                                 <div><h2 style={{ margin: 0 }}>{meal.name}</h2></div>
                                 <div className="Row">
