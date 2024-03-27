@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from "./Store/Store";
+import FoodOrderApplication from './components/FoodOrderApplication';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <React.StrictMode>
-      <App />
+      {/* <App /> */}
+      <FoodOrderApplication />
     </React.StrictMode>
   </Provider>
 );
