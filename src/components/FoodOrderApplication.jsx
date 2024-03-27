@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "./FoodOrderApplication.css";
+// import "./FoodOrderApplication.css";
+import "./FoodOrderAppliocation.css"
 
 
 function FoodOrderApplication() {
@@ -27,7 +27,7 @@ function FoodOrderApplication() {
     }, [])
 
     return (
-        <Container >
+        <div >
             <div className="head-Row">
                 <div className="head-Name">
                     <h1><span className="V">V</span>ishesh <span className="V">M</span>eal's</h1>
@@ -44,7 +44,7 @@ function FoodOrderApplication() {
                             <div key={meal.id} className="meal">
 
                                 <div className="meal-image-container">
-                                    <img src={"https://tthdnz-3000.csb.app/" + meal.image} className="meal-image" />
+                                    <img src={"https://tthdnz-3000.csb.app/" + meal.image} className="meal-image" alt={meal.name} />
                                 </div>
                                 <div><h2 style={{ margin: 0 }}>{meal.name}</h2></div>
                                 <div className="Row">
@@ -86,7 +86,7 @@ function FoodOrderApplication() {
             }
 
 
-        </Container>
+        </div>
     );
 }
 
